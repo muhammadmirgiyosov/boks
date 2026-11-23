@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080a0d">
+  <meta name="description" content="UNIVERSAL CLUB — boks va turon mashg‘ulotlari.">
+  <title>UNIVERSAL CLUB | Sport mashg‘ulotlari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="site-shell">
+  <header class="hero">
+    <div class="cover">
+      <img src="club-photo.jpg" alt="UNIVERSAL CLUB sport zali" class="cover-image">
+      <div class="cover-overlay"></div>
+      <div class="club-mark"><span>UNIVERSAL</span><strong>CLUB</strong><i></i></div>
+      <div class="cover-caption"><span class="live-dot"></span> SPORT • DISCIPLINE • RESULT</div>
+    </div>
+    <div class="brand-heading">
+      <p class="eyebrow">KUCH • INTIZOM • G‘ALABA</p>
+      <h1>UNIVERSAL <span>CLUB</span></h1>
+      <p class="hero-subtitle">O‘zingizga mos guruhni tanlang va mashg‘ulotlarga yoziling.</p>
+    </div>
+  </header>
+
+  <section class="schedule">
+    <div class="section-top">
+      <div><p class="eyebrow">HAFTALIK JADVAL</p><h2>Mashg‘ulot vaqtlari</h2></div>
+      <div class="price-card"><span>OYLIK TO‘LOV</span><strong>300 000</strong><small>SO‘M</small></div>
+    </div>
+
+    <article class="day-card">
+      <div class="day-card-head"><span class="sport-icon">🥊</span><div><h3>BOKS</h3><p>Dushanba · Chorshanba · Juma</p></div></div>
+      <div class="training-row"><div class="training-name"><strong>Boks Kids</strong><span>Bolalar guruhi</span></div><div class="training-time"><strong>18:00 – 19:30</strong><span>90 daqiqa</span></div></div>
+      <div class="training-row"><div class="training-name"><strong>Boks katta guruh</strong><span>Katta guruh</span></div><div class="training-time"><strong>20:00 – 21:30</strong><span>90 daqiqa</span></div></div>
+    </article>
+
+    <article class="day-card">
+      <div class="day-card-head"><span class="sport-icon">🥋</span><div><h3>TURON</h3><p>Seshanba · Payshanba · Shanba</p></div></div>
+      <div class="training-row"><div class="training-name"><strong>Turon katta guruh</strong><span>Katta guruh</span></div><div class="training-time"><strong>16:30 – 18:00</strong><span>90 daqiqa</span></div></div>
+      <div class="training-row"><div class="training-name"><strong>Turon Kids</strong><span>Bolalar guruhi</span></div><div class="training-time"><strong>18:00 – 19:30</strong><span>90 daqiqa</span></div></div>
+    </article>
+    <p class="schedule-footnote">Har bir mashg‘ulot 1 soat 30 daqiqa davom etadi.</p>
+  </section>
+
+  <section class="registration" id="registration">
+    <div class="form-heading"><div class="form-step">01</div><div><p class="eyebrow">BIZGA QO‘SHILING</p><h2>Ro‘yxatdan o‘tish</h2><p>Ma’lumotlaringizni kiriting. Ariza Telegram’da ochiladi.</p></div></div>
+    <form id="registrationForm">
+      <div class="field">
+        <label for="group">Mashg‘ulot guruhini tanlang</label>
+        <select id="group" required>
+          <option value="" selected disabled>Guruhni tanlang</option>
+          <option value="Boks Kids">Boks Kids</option>
+          <option value="Boks katta guruh">Boks katta guruh</option>
+          <option value="Turon katta guruh">Turon katta guruh</option>
+          <option value="Turon Kids">Turon Kids</option>
+        </select>
+        <div class="group-hint" id="groupHint" aria-live="polite">Guruhni tanlasangiz, mashg‘ulot kunlari va vaqti shu yerda ko‘rinadi.</div>
+      </div>
+      <div class="field"><label for="age">Yoshingiz</label><select id="age" required><option value="" selected disabled>Yoshingizni tanlang</option></select></div>
+      <div class="field"><label for="phone">Telefon raqamingiz</label><input id="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 90 123 45 67" required></div>
+      <button class="submit-button" type="submit"><span>Telegram orqali yuborish</span><span class="button-arrow">↗</span></button>
+      <p class="form-note">Telegram ochilgach, tayyor arizani trenerga yuborish uchun “Send” tugmasini bosing.</p>
+      <p class="error-message" id="errorMessage" role="alert"></p>
+    </form>
+  </section>
+  <footer><div class="footer-mark">UNIVERSAL <b>CLUB</b></div><p>© <span id="year"></span> UNIVERSAL CLUB</p></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
